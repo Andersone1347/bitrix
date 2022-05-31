@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <table border="2px">
+    <table>
         <tr>
           <th>модули</th>
           <th>Старт</th>
@@ -16,146 +17,244 @@
            <th>Бизнес</th>
         </tr>
         <tr>   
-          <td>Wiki</td>
+          <td class="box"><a class="button" href="#popup1">Wiki</a>
+            <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2>Подсказка</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                  Преимущества wiki
+                </div>
+              </div>
+            </div>
+        </td>
+
           <td></td><td></td><td></td><td>+</td>
         </tr>
         <tr>   
-            <td>Бизнес процессы</td>
+          <td class="box"><a class="button" href="#popup2">Бизнес процессы</a>
+            <div id="popup2" class="overlay">
+              <div class="popup">
+                <h2>Подсказка</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                  Преимущества Бизнес процессов
+                </div>
+              </div>
+            </div>
+        </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>   
-            <td>Блоги</td>
+            <td class="box"><a class="button" href="#popup3">Блоги</a>
+              <div id="popup3" class="overlay">
+                <div class="popup">
+                  <h2>Подсказка</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    Преимущества Блоги
+                  </div>
+                </div>
+              </div>
+          </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
-          <tr>   
-            <td>Валюты</td>
+           <tr>   
+            <td class="box"><a class="button" href="#popup4">Валюты</a>
+              <div id="popup4" class="overlay">
+                <div class="popup">
+                  <h2>Подсказка</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    Валюты
+                  </div>
+                </div>
+              </div>
+          </td>
             <td></td><td></td><td>+</td><td>+</td>
           </tr>
           <tr>
-          <td>Веб-аналитика</td>
+            <td class="popup" onclick="myFunction()">Веб-аналитика
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
           <td></td><td></td><td></td><td>+</td>
         </tr>
         <tr>
-            <td>Веб-мессенджер</td>
+          <td class="popup" onclick="myFunction()">Веб-мессенджер
+            <span class="popuptext" id="myPopup">Подсказка</span>
+       </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>  
           <tr>
-            <td>Веб-сервисы</td>
+            <td class="popup" onclick="myFunction()">Веб-сервисы
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Веб-формы</td>
+            <td class="popup" onclick="myFunction()">Веб-формы
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Дизайнер бизнес-процессов</td>
+            <td class="popup" onclick="myFunction()">Дизайнер бизнес-процессов
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Документооборот</td>
+            <td class="popup" onclick="myFunction()">Документооборот
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Интернет-магазин</td>
+            <td class="popup" onclick="myFunction()">Интернет-магазин
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Информационные блоки</td>
+            <td class="popup" onclick="myFunction()">Информационные блоки
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Календарь событий</td>
+            <td class="popup" onclick="myFunction()">Календарь событий
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Конструктор отчетов</td>
+            <td class="popup" onclick="myFunction()">Конструктор отчетов
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Менеджер идей</td>
+            <td class="popup" onclick="myFunction()">Менеджер идей
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Модуль производительности</td>
+            <td class="popup" onclick="myFunction()">Модуль производительности
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Облако "1С-Битрикс"</td>
+            <td class="popup" onclick="myFunction()">Облако "1С-Битрикс"
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Облачные хранилища</td>
+            <td class="popup" onclick="myFunction()">Облачные хранилища
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Обучение</td>
+            <td class="popup" onclick="myFunction()">Обучение
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Опросы,голосования</td>
+            <td class="popup" onclick="myFunction()">Опросы,голосования
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Перевод</td>
+            <td class="popup" onclick="myFunction()">Перевод
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Подписка,рассылки</td>
+            <td class="popup" onclick="myFunction()">Подписка,рассылки
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Поиск</td>
+            <td class="popup" onclick="myFunction()">Поиск
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Поисковая оптимизация</td>
+            <td class="popup" onclick="myFunction()">Поисковая оптимизация
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Почта</td>
+            <td class="popup" onclick="myFunction()">Почта
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Проактивная защита</td>
+            <td class="popup" onclick="myFunction()">Проактивная защита
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Реклама,баннеры</td>
+            <td class="popup" onclick="myFunction()">Реклама,баннеры
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Социальная сеть</td>
+            <td class="popup" onclick="myFunction()">Социальная сеть
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Социальные сервисы</td>
+            <td class="popup" onclick="myFunction()">Социальные сервисы
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Техподдержка</td>
+            <td class="popup" onclick="myFunction()">Техподдержка
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Торговый каталог</td>
+            <td class="popup" onclick="myFunction()">Торговый каталог
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Универсальные списки</td>
+            <td class="popup" onclick="myFunction()">Универсальные списки
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td></td><td></td><td>+</td>
           </tr>
           <tr>
-            <td>Форум</td>
+            <td class="popup" onclick="myFunction()">Форум
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td></td><td>+</td><td>+</td><td>+</td>
           </tr>
           <tr>
-            <td>Фотогалерея 2.0</td>
+            <td class="popup" onclick="myFunction()">Фотогалерея 2.0
+              <span class="popuptext" id="myPopup">Подсказка</span>
+         </td>
             <td>+</td><td>+</td><td>+</td><td>+</td>
           </tr>
-        <style>
-            td{
-                text-align: center;
-            }
-            </style>
       </table>
+
+    <script src="/js/action.js"></script>
 </body>
 </html>

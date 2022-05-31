@@ -28,10 +28,11 @@
         
        </table>
 </body>
-</html>```
+</html>
+```
 
-### переделаная таблица 
-`
+# переделаная таблица 
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,4 +194,4 @@
       </table>
 </body>
 </html>
-`
+```

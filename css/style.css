@@ -78,7 +78,7 @@ body {
   }
   .popup .close {
     position: absolute;
-    top: -1px;
+    top: -1%;
     right: -46%;
     transition: all 200ms;
     font-size: 30px;

@@ -1,5 +1,5 @@
 let bit = [ 
-  [
+[
     ["title","Главный модуль"],
     ["description",""],
     ["link","https://dev.1c-bitrix.ru/api_help/main/index.php"]
@@ -17,9 +17,9 @@ let bit = [
 ]
 document.body.innerHTML = `
 <ul>
-  <li><a href='https://dev.1c-bitrix.ru/api_help/main/index.php'>${bit[0][0][1]}</a></li>
-  <li><a href='#'>${bit[1][0][1]}</a></li>
-  <li><a href='https://dev.1c-bitrix.ru/api_help/fileman/index.php'>${bit[2][0][1]}</a></li>
+  <li><a href='${bit[0][2][1]}'>${bit[0][0][1]}</a></li>
+  <li><a href='${bit[1][2][1]}'>${bit[1][0][1]}</a></li>
+  <li><a href='${bit[2][2][1]}'>${bit[2][0][1]}</a></li>
 </ul>
   `
   console.log(document.querySelector('body').innerHTML)

@@ -122,36 +122,39 @@
     link:"https://dev.1c-bitrix.ru/api_help/controller/index.php"
     },
 ]
-
-
     }
-    document.body.innerHTML = `
-<ul>
-    <li><a href='${bit.CMS[0].link}'>${bit.CMS[0].title}</a></li>
-    <li><a href='${bit.CMS[1].link}'>${bit.CMS[1].title}</a></li>
-    <li><a href='${bit.CMS[2].link}'>${bit.CMS[2].title}</a></li>
-    <li><a href='${bit.CMS[3].link}'>${bit.CMS[3].title}</a></li>
-    <li><a href='${bit.CMS[4].link}'>${bit.CMS[4].title}</a></li>
-    <li><a href='${bit.CMS[5].link}'>${bit.CMS[5].title}</a></li>
-    <li><a href='${bit.CMS[6].link}'>${bit.CMS[6].title}</a></li>
-    <li><a href='${bit.CMS[7].link}'>${bit.CMS[7].title}</a></li>
-    <li><a href='${bit.CMS[8].link}'>${bit.CMS[8].title}</a></li>
-    <li><a href='${bit.CMS[9].link}'>${bit.CMS[9].title}</a></li>
-    <li><a href='${bit.CMS[10].link}'>${bit.CMS[10].title}</a></li>
-    <li><a href='${bit.CMS[11].link}'>${bit.CMS[11].title}</a></li>
-    <li><a href='${bit.CMS[12].link}'>${bit.CMS[12].title}</a></li>
-    <li><a href='${bit.CMS[13].link}'>${bit.CMS[13].title}</a></li>
-    <li><a href='${bit.CMS[14].link}'>${bit.CMS[14].title}</a></li>
-    <li><a href='${bit.CMS[15].link}'>${bit.CMS[15].title}</a></li>
-    <li><a href='${bit.CMS[16].link}'>${bit.CMS[16].title}</a></li>
-    <li><a href='${bit.CMS[17].link}'>${bit.CMS[17].title}</a></li>
-    <li><a href='${bit.CMS[18].link}'>${bit.CMS[18].title}</a></li>
-    <li><a href='${bit.CMS[19].link}'>${bit.CMS[19].title}</a></li>
-    <li><a href='${bit.CMS[20].link}'>${bit.CMS[20].title}</a></li>
-    <li><a href='${bit.CMS[21].link}'>${bit.CMS[21].title}</a></li>
+    document.write("<h3>Города Швейцарии</h3>");
+    let worm = bit.CMS.length
+for(let i=0; i < worm; i++)
+    document.write(bit.CMS[i].title + "<br/>");
+    
+//     document.body.innerHTML = `
+// <ul>
+//     <li><a href='${bit.CMS[0].link}'>${bit.CMS[0].title}</a></li>
+//     <li><a href='${bit.CMS[1].link}'>${bit.CMS[1].title}</a></li>
+//     <li><a href='${bit.CMS[2].link}'>${bit.CMS[2].title}</a></li>
+//     <li><a href='${bit.CMS[3].link}'>${bit.CMS[3].title}</a></li>
+//     <li><a href='${bit.CMS[4].link}'>${bit.CMS[4].title}</a></li>
+//     <li><a href='${bit.CMS[5].link}'>${bit.CMS[5].title}</a></li>
+//     <li><a href='${bit.CMS[6].link}'>${bit.CMS[6].title}</a></li>
+//     <li><a href='${bit.CMS[7].link}'>${bit.CMS[7].title}</a></li>
+//     <li><a href='${bit.CMS[8].link}'>${bit.CMS[8].title}</a></li>
+//     <li><a href='${bit.CMS[9].link}'>${bit.CMS[9].title}</a></li>
+//     <li><a href='${bit.CMS[10].link}'>${bit.CMS[10].title}</a></li>
+//     <li><a href='${bit.CMS[11].link}'>${bit.CMS[11].title}</a></li>
+//     <li><a href='${bit.CMS[12].link}'>${bit.CMS[12].title}</a></li>
+//     <li><a href='${bit.CMS[13].link}'>${bit.CMS[13].title}</a></li>
+//     <li><a href='${bit.CMS[14].link}'>${bit.CMS[14].title}</a></li>
+//     <li><a href='${bit.CMS[15].link}'>${bit.CMS[15].title}</a></li>
+//     <li><a href='${bit.CMS[16].link}'>${bit.CMS[16].title}</a></li>
+//     <li><a href='${bit.CMS[17].link}'>${bit.CMS[17].title}</a></li>
+//     <li><a href='${bit.CMS[18].link}'>${bit.CMS[18].title}</a></li>
+//     <li><a href='${bit.CMS[19].link}'>${bit.CMS[19].title}</a></li>
+//     <li><a href='${bit.CMS[20].link}'>${bit.CMS[20].title}</a></li>
+//     <li><a href='${bit.CMS[21].link}'>${bit.CMS[21].title}</a></li>
  
     
-    </ul>`
+//     </ul>`
   
 
         

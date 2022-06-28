@@ -1,123 +1,251 @@
-
 let bit = {
-CMS: [
-{
-title:"Главный модуль",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/main/index.php"
-},
-{
-title:"Сайты",
-description:"",
-link:"#"
-},
-{
-title:"Управление структурой",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/fileman/index.php"
-},
-{
-title:"Информационные блоки",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/iblock/index.php"
-},
-{
-title:"Highload-блоки",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/hlblock/index.php"
-},
-{
-title:"Поиск",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/search/index.php"
-},
-{
-title:"Перевод",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/translate/index.php"
-},
-{
-title:"Форумы и Блоги",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/forum/index.php"
-},
-{
-title:"Фотогалерея 2.0",
-description:"",
-link:"#"
-},
-{
-title:"Социальная сеть",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/socialnetwork/index.php"
-},
-{
-title:"Обучение, тестирование",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/learning/index.php"
-},
-{
-title:"Веб-мессенджер",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/im/index.php"
-},
-{
-title:"Бизнес-процессы",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/bizproc/index.php"
-},
-{
-title:"Почта",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/mail/index.php"
-},
-{
-title:"Техподдержка",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/support/index.php"
-},
-{
-title:"Календари",
-description:"",
-link:"#https://dev.1c-bitrix.ru/api_help/calendar/index.php"
-},
-{
-title:"Документооборот",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/workflow/index.php"
-},
-{
-title:"AD/LDAP интеграция",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/ldap/index.php"
-},
-{
-title:"Универсальные списки",
-description:"",
-link:"#"
-},
-{
-title:"База знаний Wiki",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/wiki/index.php"
-},
-{
-title:"Сервис «Есть идея!»",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/socialservices/index.php"
-},
-{
-title:"Контроллер сайтов",
-description:"",
-link:"https://dev.1c-bitrix.ru/api_help/controller/index.php"
-},
-]
-}
+  CMS: [
+    {
+      title: "Главный модуль",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/main/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Сайты",
+      description: "",
+      link: "#",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Управление структурой",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/fileman/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Информационные блоки",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/iblock/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Highload-блоки",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/hlblock/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Поиск",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/search/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Перевод",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/translate/index.php",
+      start:true,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Форумы и Блоги",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/forum/index.php",
+      start:false,
+      standart:true,
+      mb:true,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Фотогалерея 2.0",
+      description: "",
+      link: "#",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Социальная сеть",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/socialnetwork/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Обучение, тестирование",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/learning/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Веб-мессенджер",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/im/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Бизнес-процессы",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/bizproc/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Почта",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/mail/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Техподдержка",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/support/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Календари",
+      description: "",
+      link: "#https://dev.1c-bitrix.ru/api_help/calendar/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Документооборот",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/workflow/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "AD/LDAP интеграция",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/ldap/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:false,
+      ant:true,
+    },
+    {
+      title: "Универсальные списки",
+      description: "",
+      link: "#",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "База знаний Wiki",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/wiki/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Сервис «Есть идея!»",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/socialservices/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:true,
+      ant:true,
+    },
+    {
+      title: "Контроллер сайтов",
+      description: "",
+      link: "https://dev.1c-bitrix.ru/api_help/controller/index.php",
+      start:false,
+      standart:false,
+      mb:false,
+      b:false,
+      ant:true,
+    },
+  ],
+};
 document.write("<h3>Модули 1с битрикс</h3>");
-let bitrix = bit.CMS.length
+let bitrix = bit.CMS.length;
 
-for(let i=0; i < bitrix; i++)
-document.write("<a href='#'>" + bit.CMS[i].title + "</a>" + "<br/>");
+for (let i = 0; i < bitrix; i++) 
+// {
+//   if(bit.CMS.start = true )
+//   document.body.innerHTML =
+// }
+
+document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + "<br/>")
+
+   for(let el of document.querySelectorAll('bit.CMS[0]$="true"')) {
+       el.innerHTML = "Cайт в хоне .ru"  
+       }  
+    
+/* document.querySelector('body').innerHTML = `<table class="bitr"></table>`
+for(key in bit.CMS) {
+    let row = document.createElement('tr')
+    row.innerHTML = `<td>${bit.CMS[0].start}</td>`
+    document.querySelector('.bitr').appendChild(row)
+
+        
+}
+ */
 
 
 
@@ -145,6 +273,5 @@ document.write("<a href='#'>" + bit.CMS[i].title + "</a>" + "<br/>");
 //     <li><a href='${bit.CMS[19].link}'>${bit.CMS[19].title}</a></li>
 //     <li><a href='${bit.CMS[20].link}'>${bit.CMS[20].title}</a></li>
 //     <li><a href='${bit.CMS[21].link}'>${bit.CMS[21].title}</a></li>
-
 
 //     </ul>`

@@ -114,9 +114,9 @@ link:"https://dev.1c-bitrix.ru/api_help/controller/index.php"
 ]
 }
 document.write("<h3>Модули 1с битрикс</h3>");
-let worm = bit.CMS.length
+let bitrix = bit.CMS.length
 
-for(let i=0; i < worm; i++)
+for(let i=0; i < bitrix; i++)
 document.write("<a href='#'>" + bit.CMS[i].title + "</a>" + "<br/>");
 
 

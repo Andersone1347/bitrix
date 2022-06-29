@@ -222,7 +222,13 @@ let bit = {
     },
   ],
 };
-document.write("<h3>Модули 1с битрикс</h3>");
+
+       /*    вывод загаловка */
+let hMod = document.createElement('h2')
+hMod.className = "hMod"
+hMod.textContent = `Модули 1с битрикс`
+document.body.prepend(hMod)
+
 let bitrix = bit.CMS.length;
 
 for (let i = 0; i < bitrix; i++) 
@@ -233,9 +239,17 @@ for (let i = 0; i < bitrix; i++)
 
 document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + "<br/>")
 
-   for(let el of document.querySelectorAll('bit.CMS[0]$="true"')) {
-       el.innerHTML = "Cайт в хоне .ru"  
-       }  
+      //           попытка в вывод значений standart true false
+
+      let item = document.createElement('div')
+      item.className = "and"
+      for (let i = 0; i < bitrix; i++) { 
+      if(bit.CMS[0].start !== false) 
+      item.textContent = `${bit.CMS[i].standart}`
+      document.body.prepend(item)
+      }
+
+
     
 /* document.querySelector('body').innerHTML = `<table class="bitr"></table>`
 for(key in bit.CMS) {

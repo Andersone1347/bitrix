@@ -232,7 +232,6 @@ let bit = {
     },
   ],
 }
-document.write("<h3>Модули 1с битрикс</h3>");
 let bitrix = bit.CMS.length;
 
 for (let i = 0; i < bitrix; i++) 
@@ -247,16 +246,32 @@ document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" 
 //        el.innerHTML = "Cайт в хоне .ru"  
 //        }  
 
-                // попытка в вывод значений standart true false
+      //           попытка в вывод значений standart true false
 
-    //    let item = document.createElement('div')
-    //     item.className = "and"
-    //     let bitrix = bit.CMS.length;
-    //     for (let i = 0; i < bitrix; i++) { 
-    //     if(bit.CMS[0].start !== false) 
-    //     item.textContent = `${bit.CMS[i].standart}`
-    //     document.body.prepend(item)
-    //     }
+      //  let item = document.createElement('div')
+      //   item.className = "and"
+      //  let plus = bit.CMS[0].start
+      //   while( plus<10 ){
+      //     console.log(plus);
+      //     plus++;
+      //   }
+                        // вывод в консоль колличество true and false в start
+        // for(let b=0; b<bit.CMS.length; b++){
+        //   console.log(bit.CMS[b].start == true)
+        // } 
+        
+        
+        // for (let i = 0; i < bitrix; i++) { 
+        // if(bit.CMS[0].start !== false) 
+        // item.textContent = `${bit.CMS[i].standart}`
+        // document.body.prepend(item)
+        
+
+                /*    вывод загаловка */
+         let hMod = document.createElement('h2')
+         hMod.className = "hMod"
+         hMod.textContent = `Модули 1с битрикс`
+         document.body.prepend(hMod)
 
 
              // попытка в таблицу

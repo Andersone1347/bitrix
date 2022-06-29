@@ -239,15 +239,36 @@ for (let i = 0; i < bitrix; i++)
 
 document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + "<br/>")
 
-      //           попытка в вывод значений standart true false
+let tableModul = document.createElement('table')
+tableModul.className = "tableModul"
+tableModul.innerHTML = ''
 
-      let item = document.createElement('div')
-      item.className = "and"
-      for (let i = 0; i < bitrix; i++) { 
-      if(bit.CMS[0].start !== false) 
-      item.textContent = `${bit.CMS[i].standart}`
-      document.body.prepend(item)
-      }
+document.body.prepend(tableModul)
+
+/* --------------------вывод таблицы с плюсами */
+// for (let key in bit.CMS) {
+//   // if(bit.CMS[key] == true)
+//   document.write(`
+// <table class=table>
+// <td>${bit.CMS[key].start}</td>
+// <td>${bit.CMS[key].standart}</td>
+//  <td>${bit.CMS[key].mb}</td>
+//   <td>${bit.CMS[key].b}</td>
+//    <td>${bit.CMS[key].ant}</td>
+//    </table>`);
+// }
+      
+ 
+
+//           попытка в вывод значений standart true false
+
+      // let item = document.createElement('div')
+      // item.className = "and"
+      // for (let i = 0; i < bitrix; i++) { 
+      // if(bit.CMS[0].start !== false) 
+      // item.textContent = `${bit.CMS[i].standart}`
+      // document.body.prepend(item)
+      // }
 
 
     
@@ -263,29 +284,4 @@ for(key in bit.CMS) {
 
 
 
-//     document.body.innerHTML = `
-// <ul>
-//     <li><a href='${bit.CMS[0].link}'>${bit.CMS[0].title}</a></li>
-//     <li><a href='${bit.CMS[1].link}'>${bit.CMS[1].title}</a></li>
-//     <li><a href='${bit.CMS[2].link}'>${bit.CMS[2].title}</a></li>
-//     <li><a href='${bit.CMS[3].link}'>${bit.CMS[3].title}</a></li>
-//     <li><a href='${bit.CMS[4].link}'>${bit.CMS[4].title}</a></li>
-//     <li><a href='${bit.CMS[5].link}'>${bit.CMS[5].title}</a></li>
-//     <li><a href='${bit.CMS[6].link}'>${bit.CMS[6].title}</a></li>
-//     <li><a href='${bit.CMS[7].link}'>${bit.CMS[7].title}</a></li>
-//     <li><a href='${bit.CMS[8].link}'>${bit.CMS[8].title}</a></li>
-//     <li><a href='${bit.CMS[9].link}'>${bit.CMS[9].title}</a></li>
-//     <li><a href='${bit.CMS[10].link}'>${bit.CMS[10].title}</a></li>
-//     <li><a href='${bit.CMS[11].link}'>${bit.CMS[11].title}</a></li>
-//     <li><a href='${bit.CMS[12].link}'>${bit.CMS[12].title}</a></li>
-//     <li><a href='${bit.CMS[13].link}'>${bit.CMS[13].title}</a></li>
-//     <li><a href='${bit.CMS[14].link}'>${bit.CMS[14].title}</a></li>
-//     <li><a href='${bit.CMS[15].link}'>${bit.CMS[15].title}</a></li>
-//     <li><a href='${bit.CMS[16].link}'>${bit.CMS[16].title}</a></li>
-//     <li><a href='${bit.CMS[17].link}'>${bit.CMS[17].title}</a></li>
-//     <li><a href='${bit.CMS[18].link}'>${bit.CMS[18].title}</a></li>
-//     <li><a href='${bit.CMS[19].link}'>${bit.CMS[19].title}</a></li>
-//     <li><a href='${bit.CMS[20].link}'>${bit.CMS[20].title}</a></li>
-//     <li><a href='${bit.CMS[21].link}'>${bit.CMS[21].title}</a></li>
 
-//     </ul>`

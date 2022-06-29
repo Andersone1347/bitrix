@@ -8,6 +8,14 @@
   </head>
 
   <body>
+    <style>
+      table td {
+        padding: 20px;
+        border: 1px solid black;
+      }
+    </style>
+
+    <div id="elem"></div>
     <script>
       let bit = {
         CMS: [
@@ -233,15 +241,49 @@
           },
         ],
       };
+            /*    вывод загаловка */
+            let hMod = document.createElement("h2");
+      hMod.className = "hMod";
+      hMod.textContent = `Модули 1с битрикс`;
+      document.body.prepend(hMod);
+
+      
+      // let tableMod = document.createElement("table");
+      // tableMod.className = "table";
+      // tableMod.innerHTML = `<td>${bit.CMS[0].title}</td>`;
+      // document.body.append(tableMod);
+    /*   let tdTable = document.createElement('td')
+      tdTable.textContent = `${bit.CMS[0]}`
+       document.body.append(tdTable) */
+
       // let bitrix = bit.CMS.length;
 
-      // for (let i = 0; i < bitrix; i++)
-      // {
-      //   if(bit.CMS.start = true )
-      //   document.body.innerHTML =
-      // }
+      var elem = document.querySelector('#elem');
 
-      // document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + "<br/>")
+      createTable(elem, 10, 5);
+
+      function createTable(parent, cols, rows) {
+        var table = document.createElement('table');
+
+        for (var i = 0; i < rows; i++){
+          var tr = document.createElement('tr');
+
+          for (var j = 0; j < cols; j++) {
+            var td = document.createElement('td');
+            tr.appendChild(td);
+          }
+        table.appendChild(tr);
+        }
+        parent.appendChild(table);
+      }
+      
+
+        
+      
+      
+      // let tableMod = document.createElement("table");
+      // tableMod.className = "tableMod";
+      // document.body.prepend(tableMod)
 
       //    for(let el of document.querySelectorAll(true)) {
       //        el.innerHTML = "Cайт в хоне .ru"
@@ -266,11 +308,9 @@
       // item.textContent = `${bit.CMS[i].standart}`
       // document.body.prepend(item)
 
-      /*    вывод загаловка */
-      let hMod = document.createElement("h2");
-      hMod.className = "hMod";
-      hMod.textContent = `Модули 1с битрикс`;
-      document.body.prepend(hMod);
+
+
+
 
       // попытка в таблицу
       /* document.querySelector('body').innerHTML = `<table class="bitr"></table>`
@@ -283,17 +323,19 @@
     }
      */
 
-      for (let key in bit.CMS) {
-        // if(bit.CMS[key] == true)
-        document.write(`
-    <table class=table>
-    <td>${bit.CMS[key].start}</td>
-      <td>${bit.CMS[key].standart}</td>
-       <td>${bit.CMS[key].mb}</td>
-        <td>${bit.CMS[key].b}</td>
-         <td>${bit.CMS[key].ant}</td>
-         </table>`);
-      }
+
+
+    //   for (let key in bit.CMS) {
+    //     // if(bit.CMS[key] == true)
+    //     document.write(`
+    
+    // ${bit.CMS[key].start}
+    //   ${bit.CMS[key].standart}
+    //    ${bit.CMS[key].mb}
+    //     ${bit.CMS[key].b}
+    //      ${bit.CMS[key].ant}
+    //      `);
+    //   }
 
       //     document.body.innerHTML = `
       // <ul>

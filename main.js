@@ -241,22 +241,22 @@ document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" 
 
 let tableModul = document.createElement('table')
 tableModul.className = "tableModul"
-tableModul.innerHTML = ''
+tableModul.innerHTML = `<td> </td>`
 
 document.body.prepend(tableModul)
 
 /* --------------------вывод таблицы с плюсами */
-// for (let key in bit.CMS) {
-//   // if(bit.CMS[key] == true)
-//   document.write(`
-// <table class=table>
-// <td>${bit.CMS[key].start}</td>
-// <td>${bit.CMS[key].standart}</td>
-//  <td>${bit.CMS[key].mb}</td>
-//   <td>${bit.CMS[key].b}</td>
-//    <td>${bit.CMS[key].ant}</td>
-//    </table>`);
-// }
+for (let key in bit.CMS) {
+  // if(bit.CMS[key] == true)
+  document.write(`
+<table class=table>
+<td>${bit.CMS[key].start}</td>
+<td>${bit.CMS[key].standart}</td>
+ <td>${bit.CMS[key].mb}</td>
+  <td>${bit.CMS[key].b}</td>
+   <td>${bit.CMS[key].ant}</td>
+   </table>`);
+}
       
  
 

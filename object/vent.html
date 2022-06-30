@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container"></div>
+
+
+<script>
 let bit = {
   CMS: [
     {
@@ -223,53 +236,22 @@ let bit = {
   ],
 };
 
-       /*    вывод загаловка */
-let hMod = document.createElement('h2')
-hMod.className = "hMod"
-hMod.textContent = `Модули 1с битрикс`
-document.body.prepend(hMod)
-//--------------------------------
-let bitrix = bit.CMS.length;
-for (let i = 0; i < bitrix; i++) 
-document.write("<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + "<br/>")
-
-/* --------------------вывод таблицы с плюсами */
-for (let key in bit.CMS) {
-  // if(bit.CMS[key] == true)
-  document.write(`
-<table class=table>
-<td>${bit.CMS[key].start}</td>
-<td>${bit.CMS[key].standart}</td>
- <td>${bit.CMS[key].mb}</td>
-  <td>${bit.CMS[key].b}</td>
-   <td>${bit.CMS[key].ant}</td>
-   </table>`);
+var product = ['Овёс', 'Пшеница', 'Кукуруза',];
+var cost = [33, 35, 41];
+var html = '<table border="1" cellpadding="3">';
+for(var i = 0; i < product.length; i++)
+{
+	html += '<tr>';
+	html += '<td>' + product[i] + '</td>';
+	html += '<td>' + cost[i] + ' руб./кг.</td>';
+	html += '</tr>';
 }
-      //--------------
- 
 
-//           попытка в вывод значений standart true false
+window.onload = function()
+{
+	document.getElementById('container').innerHTML = html + '</table>';
+};
+</script>
 
-      // let item = document.createElement('div')
-      // item.className = "and"
-      // for (let i = 0; i < bitrix; i++) { 
-      // if(bit.CMS[0].start !== false) 
-      // item.textContent = `${bit.CMS[i].standart}`
-      // document.body.prepend(item)
-      // }
-
-
-    
-/* document.querySelector('body').innerHTML = `<table class="bitr"></table>`
-for(key in bit.CMS) {
-    let row = document.createElement('tr')
-    row.innerHTML = `<td>${bit.CMS[0].start}</td>`
-    document.querySelector('.bitr').appendChild(row)
-
-        
-}
- */
-
-
-
-
+</body>
+</html>

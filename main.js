@@ -680,7 +680,7 @@ hMod.className = "hMod";
 hMod.textContent = `Модули 1с битрикс`;
 document.body.prepend(hMod);
 
-let html = '<table border="2" cellpadding="5"><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th>                       ';
+let html = '<table border="2" cellpadding="5"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>                       ';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {
@@ -734,10 +734,28 @@ for (let i = 0; i < bit.CMS.length; i++) {
   html += '<td>' + pAnt + '</td>';
   html += '</tr>';
 }
-
+/*  ------------------popup
 window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
 };
+
+// Вызов модального окна
+$('.button').click( function() {
+	$('.overlay').fadeIn();
+});
+
+// Закрытие окна на крестик
+$('.close-popup').click( function() {
+	$('.overlay').fadeOut();
+});
+
+// Закрытие окна на поле
+$(document).mouseup( function (e) { 
+	var popup = $('.popup');
+	if (e.target != popup[0] && popup.has(e.target).length === 0){
+		$('.overlay').fadeOut();
+	}
+}); */
 //----------------- попытка в вывод заголовков в таблицу
 /* let newTh = document.createElement('th')
 newTh.innerHTML = '<h2>dasdasd</h2>'

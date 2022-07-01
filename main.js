@@ -675,7 +675,12 @@ let bit = {
   ]
 };
 
-let html = '<table border="1" cellpadding="10">';
+let hMod = document.createElement("h2");
+hMod.className = "hMod";
+hMod.textContent = `Модули 1с битрикс`;
+document.body.prepend(hMod);
+
+let html = '<table border="2" cellpadding="5"><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th>                       ';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {
@@ -717,9 +722,10 @@ for (let i = 0; i < bit.CMS.length; i++) {
     pAnt = '-'
   }
 
+  
 
 
-  html += '<tr>';
+  html += '<tr>'; 
   html += '<td>' + "<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + '</td>';
   html += '<td>' + pStart + '</td>';
   html += '<td>' + pStandart + '</td>';
@@ -732,6 +738,10 @@ for (let i = 0; i < bit.CMS.length; i++) {
 window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
 };
+//----------------- попытка в вывод заголовков в таблицу
+/* let newTh = document.createElement('th')
+newTh.innerHTML = '<h2>dasdasd</h2>'
+document.querySelector('tbody').prepend(newTh); */
 
        /*    вывод загаловка */
 /* let hMod = document.createElement('h2')

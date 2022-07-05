@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
     let bit = {
       CMS: [{
           title: "Главный модуль",
-          description: "",
+          description: "описание модуля ",
           link: "https://dev.1c-bitrix.ru/api_help/main/index.php",
           start: true,
           standart: true,
@@ -26,7 +27,7 @@
         },
         {
           title: "Сайты",
-          description: "",
+          description: "описание по ссылке",
           link: "#",
           start: true,
           standart: true,
@@ -735,7 +736,7 @@
 
 
       html += '<tr>';
-      html += '<td>' + "<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + '</td>';
+      html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'>"+ bit.CMS[i].description +"<a href='"+ bit.CMS[i].link +"'>cсылка на описание</a></div></div></div>" + '</td>';
       html += '<td>' + pStart + '</td>';
       html += '<td>' + pStandart + '</td>';
       html += '<td>' + pMb + '</td>';

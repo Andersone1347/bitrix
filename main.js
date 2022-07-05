@@ -1,24 +1,24 @@
 let bit = {
   CMS: [{
-      title: "Главный модуль",
-      description: "",
-      link: "https://dev.1c-bitrix.ru/api_help/main/index.php",
-      start: true,
-      standart: true,
-      mb: true,
-      b: true,
-      ant: true,
-    },
-    {
-      title: "Сайты",
-      description: "",
-      link: "#",
-      start: true,
-      standart: true,
-      mb: true,
-      b: true,
-      ant: true,
-    },
+    title: "Главный модуль",
+    description: "описание модуля ",
+    link: "https://dev.1c-bitrix.ru/api_help/main/index.php",
+    start: true,
+    standart: true,
+    mb: true,
+    b: true,
+    ant: true,
+  },
+  {
+    title: "Сайты",
+    description: "описание по ссылке",
+    link: "#",
+    start: true,
+    standart: true,
+    mb: true,
+    b: true,
+    ant: true,
+  },
     {
       title: "Число сайтов",
       description: "",
@@ -680,7 +680,7 @@ hMod.className = "hMod";
 hMod.textContent = `Модули 1с битрикс`;
 document.body.prepend(hMod);
 
-let html = '<table border="2" cellpadding="5"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>                       ';
+let html = '<table border="2" cellpadding="5"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {
@@ -725,8 +725,8 @@ for (let i = 0; i < bit.CMS.length; i++) {
   
 
 
-  html += '<tr>'; 
-  html += '<td>' + "<a href='" + bit.CMS[i].link + "'>" + bit.CMS[i].title + "</a>" + '</td>';
+  html += '<tr>';
+  html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'>"+ bit.CMS[i].description +"<a href='"+ bit.CMS[i].link +"'>cсылка на описание</a></div></div></div>" + '</td>';
   html += '<td>' + pStart + '</td>';
   html += '<td>' + pStandart + '</td>';
   html += '<td>' + pMb + '</td>';
@@ -734,28 +734,13 @@ for (let i = 0; i < bit.CMS.length; i++) {
   html += '<td>' + pAnt + '</td>';
   html += '</tr>';
 }
-/*  ------------------popup
+
 window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
 };
 
-// Вызов модального окна
-$('.button').click( function() {
-	$('.overlay').fadeIn();
-});
 
-// Закрытие окна на крестик
-$('.close-popup').click( function() {
-	$('.overlay').fadeOut();
-});
 
-// Закрытие окна на поле
-$(document).mouseup( function (e) { 
-	var popup = $('.popup');
-	if (e.target != popup[0] && popup.has(e.target).length === 0){
-		$('.overlay').fadeOut();
-	}
-}); */
 //----------------- попытка в вывод заголовков в таблицу
 /* let newTh = document.createElement('th')
 newTh.innerHTML = '<h2>dasdasd</h2>'

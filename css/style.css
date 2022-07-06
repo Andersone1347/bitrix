@@ -1,15 +1,20 @@
-td:nth-child(n+2):nth-child(1n) {
+td:not(:first-child) {
 text-align: center;
+width: 10%;
 }
+ thead th:not(:first-child) {
+  text-align: center;
+  width: 10%;
+  }
 
 tbody > tr:hover {
     background-color: #999;
 }
 
+
 /*       попап */
 body {
   font-family: Arial, sans-serif;
-  height: 100vh;
 }
 
 .box {
@@ -21,9 +26,6 @@ body {
 
   text-decoration: none;
   cursor: pointer;
-
-}
-.button:hover {
 
 }
 
@@ -47,8 +49,8 @@ body {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
-  border-radius: 5px;
-  width: 30%;
+  border-radius: 15px;
+  width: 60%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -60,8 +62,8 @@ body {
 }
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 1px;
+  right: 15px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
@@ -76,11 +78,29 @@ body {
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
+
+.class {
+  width: 1170px;
+  padding: 20px;
+}
+
+.tableThis {
+  border:2 px solid;
+  padding: 5;
+}
+#container {
+  overflow-x:auto;
+}
+
+@media (max-width: 768px){
+
   .popup{
     width: 70%;
+  }
+}
+@media (max-width: 460px){
+
+  .popup{
+    width: 90%;
   }
 }

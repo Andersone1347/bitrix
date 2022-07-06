@@ -2,7 +2,7 @@ td:not(:first-child) {
 text-align: center;
 width: 10%;
 }
- thead th:not(:first-child) {
+ thead th {
   text-align: center;
   width: 10%;
   }
@@ -77,22 +77,29 @@ body {
   max-height: 30%;
   overflow: auto;
 }
+/*------------------------*/
 
-
-.class {
+.container {
   width: 1170px;
   padding: 20px;
+  margin: 0 auto;
 }
 
-.tableThis {
-  border:2 px solid;
-  padding: 5;
+table, td, th {
+  border:2px solid;
+  padding: 5px;
 }
 #container {
   overflow-x:auto;
 }
 
 @media (max-width: 768px){
+
+  .container {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
 
   .popup{
     width: 70%;

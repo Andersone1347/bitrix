@@ -680,7 +680,7 @@ let bit = {
 // hMod.textContent = `Модули 1с битрикс`;
 // document.body.prepend(hMod);
 
-let html = '<table class="resp-tab"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>';
+let html = '<table class="tableThis"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {

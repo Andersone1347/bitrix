@@ -680,7 +680,7 @@ let bit = {
 // hMod.textContent = `Модули 1с битрикс`;
 // document.body.prepend(hMod);
 
-let html = '<table class="tableThis"><thead><th>Модули</th><th>Старт</th><th>Стандарт</th><th>Малый бизнес</th><th>Бизнес</th><th>Энтерпрайз</th></thead>';
+let html = '<table class="table table-bordered border-primary table-hover table-striped"><thead class="table-dark"><th scope="col">Модули</th><th scope="col">Старт</th><th scope="col">Стандарт</th><th scope="col">Малый бизнес</th><th scope="col">Бизнес</th><th scope="col">Энтерпрайз</th></thead>';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {
@@ -726,7 +726,16 @@ for (let i = 0; i < bit.CMS.length; i++) {
 
 
   html += '<tr>';
-  html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>';
+  html += '<td class="box">' 
+  +
+   "<a type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#popup"+[i]+"">" + bit.CMS[i].title + "</a>"
+   + 
+   "<div id='popup"+[i]+"' class='overlay'>"
+   +
+   "<div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a>"+
+   "<div class='content'><p>"+ bit.CMS[i].description +"</p>"+
+   "<a href='"+ bit.CMS[i].link +"'>Подробное описание</a>"+
+   "</div></div></div>" + '</td>';
   html += '<td>' + pStart + '</td>';
   html += '<td>' + pStandart + '</td>';
   html += '<td>' + pMb + '</td>';
@@ -738,6 +747,24 @@ for (let i = 0; i < bit.CMS.length; i++) {
 window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
 };
+
+
+
+
+
+
+
+
+/* html += '<td><div class="modal" tabindex="-1"><div class="modal-dialog" id="popup"><div class="modal-content"><div class="modal-header"></div></div></div></div></td>';
+ */
+
+/* html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>'; */
+
+
+
+
+
+/* html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>'; */
       //-----------------убрать ссылки
 // let titleNumber = bit.CMS[0].title;
 // titleNumber.style. = 'red';

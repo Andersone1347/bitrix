@@ -680,7 +680,9 @@ let bit = {
 // hMod.textContent = `Модули 1с битрикс`;
 // document.body.prepend(hMod);
 
-let html = '<table class="table table-bordered border-primary table-hover table-striped"><thead class="table-dark"><th scope="col">Модули</th><th scope="col">Старт</th><th scope="col">Стандарт</th><th scope="col">Малый бизнес</th><th scope="col">Бизнес</th><th scope="col">Энтерпрайз</th></thead>';
+
+
+let html = '<table id="info-table" class="table table-bordered border-primary table-hover table-striped"><thead class="table-dark"><th scope="col" class="text-center">Модули</th><th class="text-center" scope="col">Старт</th><th class="text-center" scope="col">Стандарт</th><th class="text-center" scope="col">Малый бизнес</th><th class="text-center" scope="col">Бизнес</th><th class="text-center" scope="col">Энтерпрайз</th></thead>';
 for (let i = 0; i < bit.CMS.length; i++) {
   let pStart = bit.CMS[i].start
   if (pStart === true) {
@@ -760,6 +762,26 @@ window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
 };
 
+
+function tableSearch() {
+  var phrase = document.getElementById('search-text');
+  var table = document.getElementById('info-table');
+  var regPhrase = new RegExp(phrase.value, 'i');
+  var flag = false;
+  for (var i = 1; i < table.rows.length; i++) {
+      flag = false;
+      for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+          flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+          if (flag) break;
+      }
+      if (flag) {
+          table.rows[i].style.display = "";
+      } else {
+          table.rows[i].style.display = "none";
+      }
+
+  }
+}
 
 /*---------------------------------попытка в ботстрап 
  '<td class="box">' + "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal'><a class='button' href='#exampleModal"+[i]+"'>" + bit.CMS[i].title + "</a></button>"+

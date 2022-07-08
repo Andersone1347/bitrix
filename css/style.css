@@ -69,16 +69,6 @@ width: 10%;
   max-height: 30%;
   overflow: auto;
 } */
-/*------------------------*/
-
-
-
-#anone2 a, #anone3 a, #anone31 a, #anone33 a, #anone34 a, #anone35 a, #anone49 a, #anone62 a {
-  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
-  cursor: default; /*  курсор в виде стрелки */
-  color: rgb(0, 0, 0);/* цвет текста серый */
-  }
-/*-------------------кнопка в попап*/
 
    /*-----------------------------*/
 a{
@@ -90,3 +80,11 @@ a{
   cursor: default; /*  курсор в виде стрелки */
   color: rgb(0, 0, 0);/* цвет текста серый */
   }
+
+.form-inline{
+display: flex;
+}
+
+.form-control {
+  margin: 0 10px 0 0;
+}

@@ -743,14 +743,14 @@ for (let i = 0; i < bit.CMS.length; i++) {
 
 
   html += '<tr>';
-  html +=`<td class="box">`+`<a  href="exampleModal`+[i]+`" data-bs-toggle="modal" data-bs-target="#exampleModal`+[i]+`" id="anone`+[i]+`">
+  html +=`<td class="box">`+`<a href="exampleModal`+[i]+`" data-bs-toggle="modal" data-bs-target="#exampleModal`+[i]+`" id="anone`+[i]+`" target="_blank">
   `+bit.CMS[i].title+`
 </a></td>`;
-  html += '<td>' + pStart + '</td>';
-  html += '<td>' + pStandart + '</td>';
-  html += '<td>' + pMb + '</td>';
-  html += '<td>' + pB + '</td>';
-  html += '<td>' + pAnt + '</td>';
+  html += '<td class="text-center">' + pStart + '</td>';
+  html += '<td class="text-center">' + pStandart + '</td>';
+  html += '<td class="text-center">' + pMb + '</td>';
+  html += '<td class="text-center">' + pB + '</td>';
+  html += '<td class="text-center">' + pAnt + '</td>';
   html += '</tr>';
 }
 

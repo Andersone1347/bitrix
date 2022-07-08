@@ -9,7 +9,7 @@ width: 10%;
 
 
 /*       попап */
-body {
+/* body {
   font-family: Arial, sans-serif;
 }
 
@@ -72,64 +72,18 @@ body {
 .popup .content {
   max-height: 30%;
   overflow: auto;
-}
+} */
 /*------------------------*/
 
-.container {
-  width: 1170px;
-  padding: 20px;
-  margin: 0 auto;
-}
 
-table, td, th {
-  border:2px solid;
-  padding: 5px;
-}
-#container {
-  overflow-x:auto;
-}
 
-@media (max-width: 768px){
-
-  .container {
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-  }
-
-  .popup{
-    width: 70%;
-  }
-}
-@media (max-width: 460px){
-
-  .popup{
-    width: 90%;
-  }
-}
-
-button {
-  width: 50px;
-  height: 50px;
-}
 #anone2 a, #anone3 a, #anone31 a, #anone33 a, #anone34 a, #anone35 a, #anone49 a, #anone62 a {
   pointer-events: none; /* делаем элемент неактивным для взаимодействия */
   cursor: default; /*  курсор в виде стрелки */
   color: rgb(0, 0, 0);/* цвет текста серый */
   }
 /*-------------------кнопка в попап*/
-  .bitLink {
-    display: inline-block; /* Строчно-блочный элемент */
-    background: #2574b9; /* Серый цвет фона */
-    color: #fff; /* Белый цвет текста */
-    padding: 1rem 1.5rem; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    border-radius: 3px; /* Скругляем уголки */
-   }
 
-   .btn-secondary{
-    min-width: 85px;
-   }
    /*-----------------------------*/
 a{
   text-decoration: none;

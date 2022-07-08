@@ -732,8 +732,8 @@ for (let i = 0; i < bit.CMS.length; i++) {
       </div>
       <div class="modal-body">` + bit.CMS[i].description + `</div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-       <a href="`+bit.CMS[i].link+`" class="bitLink">Переход по ссылке</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+       <a href="`+bit.CMS[i].link+`" class="bitLink">Подробное описание</a>
       </div>
     </div>
   </div>

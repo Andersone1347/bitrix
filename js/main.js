@@ -730,10 +730,10 @@ for (let i = 0; i < bit.CMS.length; i++) {
         <h5 class="modal-title" id="exampleModalLabel`+[i]+`">` + bit.CMS[i].title + `</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">'` + bit.CMS[i].description + `"</div>
+      <div class="modal-body">` + bit.CMS[i].description + `</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <form action="`+bit.CMS[i].link+`target="_blank""><button type="button" class="btn btn-primary">описание</button></form>
+       <a href="`+bit.CMS[i].link+`" class="bitLink">Переход по ссылке</a>
       </div>
     </div>
   </div>
@@ -743,8 +743,7 @@ for (let i = 0; i < bit.CMS.length; i++) {
 
 
   html += '<tr>';
-  html +=`<td class="box">`+`<a type="button" class="btn btn-primary"
-  href="exampleModal`+[i]+`" data-bs-toggle="modal" data-bs-target="#exampleModal`+[i]+`">
+  html +=`<td class="box">`+`<a  href="exampleModal`+[i]+`" data-bs-toggle="modal" data-bs-target="#exampleModal`+[i]+`" id="anone`+[i]+`">
   `+bit.CMS[i].title+`
 </a></td>`;
   html += '<td>' + pStart + '</td>';

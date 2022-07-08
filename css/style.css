@@ -117,3 +117,26 @@ button {
   cursor: default; /*  курсор в виде стрелки */
   color: rgb(0, 0, 0);/* цвет текста серый */
   }
+/*-------------------кнопка в попап*/
+  .bitLink {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #2574b9; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+   }
+
+   .btn-secondary{
+    min-width: 65px;
+   }
+   /*-----------------------------*/
+a{
+  text-decoration: none;
+}
+
+#anone2, #anone3, #anone31, #anone33, #anone34, #anone35, #anone49, #anone62 {
+  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+  cursor: default; /*  курсор в виде стрелки */
+  color: rgb(0, 0, 0);/* цвет текста серый */
+  }

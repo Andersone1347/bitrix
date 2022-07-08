@@ -722,27 +722,43 @@ for (let i = 0; i < bit.CMS.length; i++) {
     pAnt = '-'
   }
 
-  
+ html += `
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+ `
 
 
   html += '<tr>';
-  html += '<td class="box">' 
-  +
-   "<a type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#popup"+[i]+"">" + bit.CMS[i].title + "</a>"
-   + 
-   "<div id='popup"+[i]+"' class='overlay'>"
-   +
-   "<div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a>"+
-   "<div class='content'><p>"+ bit.CMS[i].description +"</p>"+
-   "<a href='"+ bit.CMS[i].link +"'>Подробное описание</a>"+
-   "</div></div></div>" + '</td>';
+  html += '<td class="box" id="anone'+[i]+'">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>';
   html += '<td>' + pStart + '</td>';
   html += '<td>' + pStandart + '</td>';
   html += '<td>' + pMb + '</td>';
   html += '<td>' + pB + '</td>';
   html += '<td>' + pAnt + '</td>';
   html += '</tr>';
+
+  
+
+  
 }
+
+
 
 window.onload = function () {
   document.getElementById('container').innerHTML = html + '</table>';
@@ -750,15 +766,22 @@ window.onload = function () {
 
 
 
-
-
-
+/*---------------------------------попытка в ботстрап 
+ '<td class="box">' + "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal'><a class='button' href='#exampleModal"+[i]+"'>" + bit.CMS[i].title + "</a></button>"+
+   "<div id='exampleModal"+[i]+"' class='overlay'><div class='popup'><h2>" 
+   + bit.CMS[i].title +
+   "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+
+    bit.CMS[i].description +
+   "</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>';
+ ------------------------------------------------------------------*/
 
 
 /* html += '<td><div class="modal" tabindex="-1"><div class="modal-dialog" id="popup"><div class="modal-content"><div class="modal-header"></div></div></div></div></td>';
  */
 
-/* html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>'; */
+/* ----------------------------без бутстрапа-----------------------
+html += '<td class="box">' + "<a class='button' href='#popup"+[i]+"'>" + bit.CMS[i].title + "</a>"+ "<div id='popup"+[i]+"' class='overlay'><div class='popup'><h2>" + bit.CMS[i].title + "</h2><a class='close'href='#'>&times;</a><div class='content'><p>"+ bit.CMS[i].description +"</p><a href='"+ bit.CMS[i].link +"'>Подробное описание</a></div></div></div>" + '</td>'; 
+--------------------------------------------------------------------*/
 
 
 
